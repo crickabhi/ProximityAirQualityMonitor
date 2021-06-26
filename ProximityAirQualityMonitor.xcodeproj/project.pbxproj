@@ -3,18 +3,29 @@
 	archiveVersion = 1;
 	classes = {
 	};
-	objectVersion = 50;
+	objectVersion = 51;
 	objects = {
 
 /* Begin PBXBuildFile section */
+		168BF78D1CE62FC03262A3F6 /* Pods_ProximityAirQualityMonitor.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = BAD0290EC641E8E83F2AE701 /* Pods_ProximityAirQualityMonitor.framework */; };
+		1F007912A0BD728AB3FB3C5D /* Pods_ProximityAirQualityMonitor_ProximityAirQualityMonitorUITests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = C54D75A712E3A415701F0357 /* Pods_ProximityAirQualityMonitor_ProximityAirQualityMonitorUITests.framework */; };
 		D15658C12682032F007EDBF6 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = D15658C02682032F007EDBF6 /* AppDelegate.swift */; };
 		D15658C32682032F007EDBF6 /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = D15658C22682032F007EDBF6 /* SceneDelegate.swift */; };
-		D15658C52682032F007EDBF6 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = D15658C42682032F007EDBF6 /* ViewController.swift */; };
+		D15658C52682032F007EDBF6 /* AirQualityVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = D15658C42682032F007EDBF6 /* AirQualityVC.swift */; };
 		D15658C82682032F007EDBF6 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = D15658C62682032F007EDBF6 /* Main.storyboard */; };
 		D15658CA26820331007EDBF6 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = D15658C926820331007EDBF6 /* Assets.xcassets */; };
 		D15658CD26820331007EDBF6 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = D15658CB26820331007EDBF6 /* LaunchScreen.storyboard */; };
 		D15658D826820332007EDBF6 /* ProximityAirQualityMonitorTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = D15658D726820332007EDBF6 /* ProximityAirQualityMonitorTests.swift */; };
 		D15658E326820332007EDBF6 /* ProximityAirQualityMonitorUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = D15658E226820332007EDBF6 /* ProximityAirQualityMonitorUITests.swift */; };
+		D15658F126832461007EDBF6 /* AirQualityVM.swift in Sources */ = {isa = PBXBuildFile; fileRef = D15658F026832461007EDBF6 /* AirQualityVM.swift */; };
+		D15658F326832507007EDBF6 /* CityAirQuality.swift in Sources */ = {isa = PBXBuildFile; fileRef = D15658F226832507007EDBF6 /* CityAirQuality.swift */; };
+		D159B9EF2684748700034427 /* AirQualityTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = D159B9EE2684748700034427 /* AirQualityTableViewCell.swift */; };
+		D159B9F12684B1B900034427 /* AirQualityVisualizationVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = D159B9F02684B1B800034427 /* AirQualityVisualizationVC.swift */; };
+		D17C7F9426863D75001DA91A /* BalloonMarker.swift in Sources */ = {isa = PBXBuildFile; fileRef = D17C7F9326863D74001DA91A /* BalloonMarker.swift */; };
+		D17C7F9626865114001DA91A /* Utility.swift in Sources */ = {isa = PBXBuildFile; fileRef = D17C7F9526865114001DA91A /* Utility.swift */; };
+		D17C7F982687BEA6001DA91A /* AirQualityStandardsVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = D17C7F972687BEA6001DA91A /* AirQualityStandardsVC.swift */; };
+		D17C7F9A2687BF44001DA91A /* AirQualityStandardTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = D17C7F992687BF44001DA91A /* AirQualityStandardTableViewCell.swift */; };
+		DA77F103C6C01E48FF469F07 /* Pods_ProximityAirQualityMonitorTests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = EB7A33753B86EBA8D41FA63D /* Pods_ProximityAirQualityMonitorTests.framework */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -35,10 +46,18 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		1776205C9FD8A2A09F8B140B /* Pods-ProximityAirQualityMonitor-ProximityAirQualityMonitorUITests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-ProximityAirQualityMonitor-ProximityAirQualityMonitorUITests.debug.xcconfig"; path = "Target Support Files/Pods-ProximityAirQualityMonitor-ProximityAirQualityMonitorUITests/Pods-ProximityAirQualityMonitor-ProximityAirQualityMonitorUITests.debug.xcconfig"; sourceTree = "<group>"; };
+		197AB22F8A7DAF309CC2A20C /* Pods-ProximityAirQualityMonitor.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-ProximityAirQualityMonitor.debug.xcconfig"; path = "Target Support Files/Pods-ProximityAirQualityMonitor/Pods-ProximityAirQualityMonitor.debug.xcconfig"; sourceTree = "<group>"; };
+		4E17B5E49F2120D16A64FBE1 /* Pods-ProximityAirQualityMonitorTests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-ProximityAirQualityMonitorTests.release.xcconfig"; path = "Target Support Files/Pods-ProximityAirQualityMonitorTests/Pods-ProximityAirQualityMonitorTests.release.xcconfig"; sourceTree = "<group>"; };
+		5D81C294571A1907CCF5DB35 /* Pods-ProximityAirQualityMonitor.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-ProximityAirQualityMonitor.release.xcconfig"; path = "Target Support Files/Pods-ProximityAirQualityMonitor/Pods-ProximityAirQualityMonitor.release.xcconfig"; sourceTree = "<group>"; };
+		865EDAB314D0E5DFDDEA6F37 /* Pods-ProximityAirQualityMonitor-ProximityAirQualityMonitorUITests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-ProximityAirQualityMonitor-ProximityAirQualityMonitorUITests.release.xcconfig"; path = "Target Support Files/Pods-ProximityAirQualityMonitor-ProximityAirQualityMonitorUITests/Pods-ProximityAirQualityMonitor-ProximityAirQualityMonitorUITests.release.xcconfig"; sourceTree = "<group>"; };
+		88150C7333A37201334DE0D0 /* Pods-ProximityAirQualityMonitorTests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-ProximityAirQualityMonitorTests.debug.xcconfig"; path = "Target Support Files/Pods-ProximityAirQualityMonitorTests/Pods-ProximityAirQualityMonitorTests.debug.xcconfig"; sourceTree = "<group>"; };
+		BAD0290EC641E8E83F2AE701 /* Pods_ProximityAirQualityMonitor.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_ProximityAirQualityMonitor.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		C54D75A712E3A415701F0357 /* Pods_ProximityAirQualityMonitor_ProximityAirQualityMonitorUITests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_ProximityAirQualityMonitor_ProximityAirQualityMonitorUITests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		D15658BD2682032F007EDBF6 /* ProximityAirQualityMonitor.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = ProximityAirQualityMonitor.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		D15658C02682032F007EDBF6 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		D15658C22682032F007EDBF6 /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
-		D15658C42682032F007EDBF6 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
+		D15658C42682032F007EDBF6 /* AirQualityVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AirQualityVC.swift; sourceTree = "<group>"; };
 		D15658C72682032F007EDBF6 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
 		D15658C926820331007EDBF6 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		D15658CC26820331007EDBF6 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
@@ -49,6 +68,15 @@
 		D15658DE26820332007EDBF6 /* ProximityAirQualityMonitorUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = ProximityAirQualityMonitorUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		D15658E226820332007EDBF6 /* ProximityAirQualityMonitorUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ProximityAirQualityMonitorUITests.swift; sourceTree = "<group>"; };
 		D15658E426820332007EDBF6 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		D15658F026832461007EDBF6 /* AirQualityVM.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AirQualityVM.swift; sourceTree = "<group>"; };
+		D15658F226832507007EDBF6 /* CityAirQuality.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CityAirQuality.swift; sourceTree = "<group>"; };
+		D159B9EE2684748700034427 /* AirQualityTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AirQualityTableViewCell.swift; sourceTree = "<group>"; };
+		D159B9F02684B1B800034427 /* AirQualityVisualizationVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AirQualityVisualizationVC.swift; sourceTree = "<group>"; };
+		D17C7F9326863D74001DA91A /* BalloonMarker.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BalloonMarker.swift; sourceTree = "<group>"; };
+		D17C7F9526865114001DA91A /* Utility.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Utility.swift; sourceTree = "<group>"; };
+		D17C7F972687BEA6001DA91A /* AirQualityStandardsVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AirQualityStandardsVC.swift; sourceTree = "<group>"; };
+		D17C7F992687BF44001DA91A /* AirQualityStandardTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AirQualityStandardTableViewCell.swift; sourceTree = "<group>"; };
+		EB7A33753B86EBA8D41FA63D /* Pods_ProximityAirQualityMonitorTests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_ProximityAirQualityMonitorTests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -56,6 +84,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				168BF78D1CE62FC03262A3F6 /* Pods_ProximityAirQualityMonitor.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -63,6 +92,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				DA77F103C6C01E48FF469F07 /* Pods_ProximityAirQualityMonitorTests.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -70,12 +100,36 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				1F007912A0BD728AB3FB3C5D /* Pods_ProximityAirQualityMonitor_ProximityAirQualityMonitorUITests.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		1AC30347D49B8F2015D5E3A6 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				BAD0290EC641E8E83F2AE701 /* Pods_ProximityAirQualityMonitor.framework */,
+				C54D75A712E3A415701F0357 /* Pods_ProximityAirQualityMonitor_ProximityAirQualityMonitorUITests.framework */,
+				EB7A33753B86EBA8D41FA63D /* Pods_ProximityAirQualityMonitorTests.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		7CEBE7AF9535CEF9C32A459C /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				197AB22F8A7DAF309CC2A20C /* Pods-ProximityAirQualityMonitor.debug.xcconfig */,
+				5D81C294571A1907CCF5DB35 /* Pods-ProximityAirQualityMonitor.release.xcconfig */,
+				1776205C9FD8A2A09F8B140B /* Pods-ProximityAirQualityMonitor-ProximityAirQualityMonitorUITests.debug.xcconfig */,
+				865EDAB314D0E5DFDDEA6F37 /* Pods-ProximityAirQualityMonitor-ProximityAirQualityMonitorUITests.release.xcconfig */,
+				88150C7333A37201334DE0D0 /* Pods-ProximityAirQualityMonitorTests.debug.xcconfig */,
+				4E17B5E49F2120D16A64FBE1 /* Pods-ProximityAirQualityMonitorTests.release.xcconfig */,
+			);
+			path = Pods;
+			sourceTree = "<group>";
+		};
 		D15658B42682032F007EDBF6 = {
 			isa = PBXGroup;
 			children = (
@@ -83,6 +137,8 @@
 				D15658D626820332007EDBF6 /* ProximityAirQualityMonitorTests */,
 				D15658E126820332007EDBF6 /* ProximityAirQualityMonitorUITests */,
 				D15658BE2682032F007EDBF6 /* Products */,
+				7CEBE7AF9535CEF9C32A459C /* Pods */,
+				1AC30347D49B8F2015D5E3A6 /* Frameworks */,
 			);
 			sourceTree = "<group>";
 		};
@@ -101,7 +157,11 @@
 			children = (
 				D15658C02682032F007EDBF6 /* AppDelegate.swift */,
 				D15658C22682032F007EDBF6 /* SceneDelegate.swift */,
-				D15658C42682032F007EDBF6 /* ViewController.swift */,
+				D17C7F9C2687C548001DA91A /* ViewModel */,
+				D17C7F9B2687C51F001DA91A /* ViewController */,
+				D17C7F9D2687C561001DA91A /* Model */,
+				D17C7F9F2687C58A001DA91A /* Utillity */,
+				D17C7F9E2687C571001DA91A /* Views */,
 				D15658C62682032F007EDBF6 /* Main.storyboard */,
 				D15658C926820331007EDBF6 /* Assets.xcassets */,
 				D15658CB26820331007EDBF6 /* LaunchScreen.storyboard */,
@@ -128,6 +188,50 @@
 			path = ProximityAirQualityMonitorUITests;
 			sourceTree = "<group>";
 		};
+		D17C7F9B2687C51F001DA91A /* ViewController */ = {
+			isa = PBXGroup;
+			children = (
+				D15658C42682032F007EDBF6 /* AirQualityVC.swift */,
+				D17C7F972687BEA6001DA91A /* AirQualityStandardsVC.swift */,
+				D159B9F02684B1B800034427 /* AirQualityVisualizationVC.swift */,
+			);
+			path = ViewController;
+			sourceTree = "<group>";
+		};
+		D17C7F9C2687C548001DA91A /* ViewModel */ = {
+			isa = PBXGroup;
+			children = (
+				D15658F026832461007EDBF6 /* AirQualityVM.swift */,
+			);
+			path = ViewModel;
+			sourceTree = "<group>";
+		};
+		D17C7F9D2687C561001DA91A /* Model */ = {
+			isa = PBXGroup;
+			children = (
+				D15658F226832507007EDBF6 /* CityAirQuality.swift */,
+			);
+			path = Model;
+			sourceTree = "<group>";
+		};
+		D17C7F9E2687C571001DA91A /* Views */ = {
+			isa = PBXGroup;
+			children = (
+				D17C7F9326863D74001DA91A /* BalloonMarker.swift */,
+				D17C7F992687BF44001DA91A /* AirQualityStandardTableViewCell.swift */,
+				D159B9EE2684748700034427 /* AirQualityTableViewCell.swift */,
+			);
+			path = Views;
+			sourceTree = "<group>";
+		};
+		D17C7F9F2687C58A001DA91A /* Utillity */ = {
+			isa = PBXGroup;
+			children = (
+				D17C7F9526865114001DA91A /* Utility.swift */,
+			);
+			path = Utillity;
+			sourceTree = "<group>";
+		};
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
@@ -135,9 +239,11 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = D15658E726820332007EDBF6 /* Build configuration list for PBXNativeTarget "ProximityAirQualityMonitor" */;
 			buildPhases = (
+				757723F56C8AA41E8F8EFC9A /* [CP] Check Pods Manifest.lock */,
 				D15658B92682032F007EDBF6 /* Sources */,
 				D15658BA2682032F007EDBF6 /* Frameworks */,
 				D15658BB2682032F007EDBF6 /* Resources */,
+				DC705D0431B022BE17C5264A /* [CP] Embed Pods Frameworks */,
 			);
 			buildRules = (
 			);
@@ -152,6 +258,7 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = D15658EA26820332007EDBF6 /* Build configuration list for PBXNativeTarget "ProximityAirQualityMonitorTests" */;
 			buildPhases = (
+				332C98B2714CE4E1F82C704B /* [CP] Check Pods Manifest.lock */,
 				D15658CF26820332007EDBF6 /* Sources */,
 				D15658D026820332007EDBF6 /* Frameworks */,
 				D15658D126820332007EDBF6 /* Resources */,
@@ -170,9 +277,11 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = D15658ED26820332007EDBF6 /* Build configuration list for PBXNativeTarget "ProximityAirQualityMonitorUITests" */;
 			buildPhases = (
+				3E030997BD9044136E787C35 /* [CP] Check Pods Manifest.lock */,
 				D15658DA26820332007EDBF6 /* Sources */,
 				D15658DB26820332007EDBF6 /* Frameworks */,
 				D15658DC26820332007EDBF6 /* Resources */,
+				10F0AD579E7ABE0BA4E8273A /* [CP] Embed Pods Frameworks */,
 			);
 			buildRules = (
 			);
@@ -253,14 +362,125 @@
 		};
 /* End PBXResourcesBuildPhase section */
 
+/* Begin PBXShellScriptBuildPhase section */
+		10F0AD579E7ABE0BA4E8273A /* [CP] Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-ProximityAirQualityMonitor-ProximityAirQualityMonitorUITests/Pods-ProximityAirQualityMonitor-ProximityAirQualityMonitorUITests-frameworks-${CONFIGURATION}-input-files.xcfilelist",
+			);
+			name = "[CP] Embed Pods Frameworks";
+			outputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-ProximityAirQualityMonitor-ProximityAirQualityMonitorUITests/Pods-ProximityAirQualityMonitor-ProximityAirQualityMonitorUITests-frameworks-${CONFIGURATION}-output-files.xcfilelist",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${PODS_ROOT}/Target Support Files/Pods-ProximityAirQualityMonitor-ProximityAirQualityMonitorUITests/Pods-ProximityAirQualityMonitor-ProximityAirQualityMonitorUITests-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		332C98B2714CE4E1F82C704B /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputFileListPaths = (
+			);
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-ProximityAirQualityMonitorTests-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
+		3E030997BD9044136E787C35 /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputFileListPaths = (
+			);
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-ProximityAirQualityMonitor-ProximityAirQualityMonitorUITests-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
+		757723F56C8AA41E8F8EFC9A /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputFileListPaths = (
+			);
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-ProximityAirQualityMonitor-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
+		DC705D0431B022BE17C5264A /* [CP] Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-ProximityAirQualityMonitor/Pods-ProximityAirQualityMonitor-frameworks-${CONFIGURATION}-input-files.xcfilelist",
+			);
+			name = "[CP] Embed Pods Frameworks";
+			outputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-ProximityAirQualityMonitor/Pods-ProximityAirQualityMonitor-frameworks-${CONFIGURATION}-output-files.xcfilelist",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${PODS_ROOT}/Target Support Files/Pods-ProximityAirQualityMonitor/Pods-ProximityAirQualityMonitor-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+/* End PBXShellScriptBuildPhase section */
+
 /* Begin PBXSourcesBuildPhase section */
 		D15658B92682032F007EDBF6 /* Sources */ = {
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				D15658C52682032F007EDBF6 /* ViewController.swift in Sources */,
+				D15658C52682032F007EDBF6 /* AirQualityVC.swift in Sources */,
+				D15658F126832461007EDBF6 /* AirQualityVM.swift in Sources */,
+				D17C7F982687BEA6001DA91A /* AirQualityStandardsVC.swift in Sources */,
+				D17C7F9626865114001DA91A /* Utility.swift in Sources */,
+				D15658F326832507007EDBF6 /* CityAirQuality.swift in Sources */,
 				D15658C12682032F007EDBF6 /* AppDelegate.swift in Sources */,
+				D159B9F12684B1B900034427 /* AirQualityVisualizationVC.swift in Sources */,
+				D159B9EF2684748700034427 /* AirQualityTableViewCell.swift in Sources */,
+				D17C7F9A2687BF44001DA91A /* AirQualityStandardTableViewCell.swift in Sources */,
 				D15658C32682032F007EDBF6 /* SceneDelegate.swift in Sources */,
+				D17C7F9426863D75001DA91A /* BalloonMarker.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -433,6 +653,7 @@
 		};
 		D15658E826820332007EDBF6 /* Debug */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 197AB22F8A7DAF309CC2A20C /* Pods-ProximityAirQualityMonitor.debug.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
@@ -452,6 +673,7 @@
 		};
 		D15658E926820332007EDBF6 /* Release */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 5D81C294571A1907CCF5DB35 /* Pods-ProximityAirQualityMonitor.release.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
@@ -471,6 +693,7 @@
 		};
 		D15658EB26820332007EDBF6 /* Debug */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 88150C7333A37201334DE0D0 /* Pods-ProximityAirQualityMonitorTests.debug.xcconfig */;
 			buildSettings = {
 				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				BUNDLE_LOADER = "$(TEST_HOST)";
@@ -493,6 +716,7 @@
 		};
 		D15658EC26820332007EDBF6 /* Release */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 4E17B5E49F2120D16A64FBE1 /* Pods-ProximityAirQualityMonitorTests.release.xcconfig */;
 			buildSettings = {
 				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				BUNDLE_LOADER = "$(TEST_HOST)";
@@ -515,6 +739,7 @@
 		};
 		D15658EE26820332007EDBF6 /* Debug */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 1776205C9FD8A2A09F8B140B /* Pods-ProximityAirQualityMonitor-ProximityAirQualityMonitorUITests.debug.xcconfig */;
 			buildSettings = {
 				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				CODE_SIGN_STYLE = Automatic;
@@ -535,6 +760,7 @@
 		};
 		D15658EF26820332007EDBF6 /* Release */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 865EDAB314D0E5DFDDEA6F37 /* Pods-ProximityAirQualityMonitor-ProximityAirQualityMonitorUITests.release.xcconfig */;
 			buildSettings = {
 				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				CODE_SIGN_STYLE = Automatic;
