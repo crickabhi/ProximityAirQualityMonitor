@@ -8,10 +8,6 @@
 import UIKit
 import Charts
 
-protocol AQIObserverDelegate: AnyObject {
-    func updateCityAQI(_ airQuality: [CityAirQuality])
-}
-
 class AirQualityVisualizationVC: UIViewController {
     // MARK: - Constants
     static private let VC_IDENTIFIER = "AirQualityVisualizationVC"

@@ -55,10 +55,6 @@ protocol CityAQI: Codable {
     var aqi: Double { get }
 }
 
-protocol CityDisplay {
-    var background: UIColor { get }
-}
-
 struct CityAirQuality: CityAQI  {
     var city: String
     var aqi: Double
@@ -75,13 +71,6 @@ struct CityAirQuality: CityAQI  {
         self.lastUpdated = try container.decodeIfPresent(String.self, forKey: .lastUpdated) ?? Date().timeAgo
     }
 }
-
-extension CityAirQuality: CityDisplay  {
-    var background: UIColor {
-        return self.category.backgroundColour
-    }
-}
-
 
 extension CityAirQuality: Equatable {
     static func == (lhs: CityAirQuality, rhs: CityAirQuality) -> Bool {
@@ -109,10 +98,3 @@ extension CityAirQuality {
         }
     }
 }
-
-
-/*
- websocket is connected: ["Via": "1.1 vegur", "Sec-WebSocket-Accept": "Mtq5z7VKLvC6imjfDG+7NWyZSyY=", "Upgrade": "websocket", "Connection": "Upgrade"]
- 
- Received text: [{"city":"Bengaluru","aqi":191.64147806528513},{"city":"Bhubaneswar","aqi":102.55896666491108},{"city":"Chennai","aqi":143.12800563239477},{"city":"Hyderabad","aqi":200.72363120823348},{"city":"Indore","aqi":49.440963918866984},{"city":"Chandigarh","aqi":47.977841339565984}]
- */

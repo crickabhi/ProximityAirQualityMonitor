@@ -15,7 +15,6 @@ enum AQIObserverEvent {
     case updateCityAQI([CityAirQuality]?)
 }
 
-
 class AirQualityVM {
     
     private var socket: WebSocket!
@@ -63,10 +62,8 @@ class AirQualityVM {
                let index = displayList.firstIndex(of: oldItem)
                {
                 newItem.lastUpdated = oldItem.time.timeAgo
-//                newItem.category = newItem.category.getBackgroundColour(oldItem.category)
                 if newItem.category == .poor && oldItem.category == .good {
                     newItem.hasDegraded = true
-//                    newItem.category.getBackgroundColour(oldItem.category)
                 }
                 displayList.remove(at: index)
                 displayList.insert(newItem, at: index)
