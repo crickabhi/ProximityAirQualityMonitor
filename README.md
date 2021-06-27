@@ -29,6 +29,11 @@ Application uses MVVM architecture with Observer design pattern.
 - Protocol [CityAQI](https://github.com/crickabhi/ProximityAirQualityMonitor/blob/main/ProximityAirQualityMonitor/Model/CityAirQuality.swift) - City name and aqi value.
 - Struct [CityAirQuality](https://github.com/crickabhi/ProximityAirQualityMonitor/blob/main/ProximityAirQualityMonitor/Model/CityAirQuality.swift) which adheres to CityAQI with lastUpdatedTime.
 
+| Pod | Description |
+| ------ | ------ |
+| Starscream | [Starscream is a conforming WebSocket (RFC 6455) library in Swift](https://github.com/daltoniam/Starscream) |
+| Charts | [A beautiful Charts library](https://github.com/danielgindi/Charts) |
+
 ## Screenshots
 
 Fetching Data             |  List of City AQI          |  AQI Standard    
