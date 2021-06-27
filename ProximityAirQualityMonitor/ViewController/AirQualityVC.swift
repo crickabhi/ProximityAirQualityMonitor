@@ -19,7 +19,6 @@ class AirQualityVC: UIViewController {
     // MARK: - Variables
     @IBOutlet weak var tableView: UITableView!
     var viewModel = AirQualityVM()
-    weak var delegate: AQIObserverDelegate?
     
     // MARK: - Initialisation Methods
     override func viewDidLoad() {

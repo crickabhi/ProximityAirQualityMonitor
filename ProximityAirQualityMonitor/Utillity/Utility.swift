@@ -18,30 +18,33 @@ class DateValueFormatter: NSObject, IAxisValueFormatter {
     
     func stringForValue(_ value: Double, axis: AxisBase?) -> String {
         let dateString = dateFormatter.string(from: Date(timeIntervalSince1970: value))
-        let date = dateFormatter.date(from: dateString)
-        dateFormatter.dateFormat = "hh:mm:ss a"
-        return dateFormatter.string(from: date!)
+        guard let date = dateFormatter.date(from: dateString) else {
+            return ""
+        }
+        return date.timeString
     }
 }
 
 extension Date {
     var timeAgo: String {
         let interval = Calendar.current.dateComponents([.day, .hour, .minute, .second], from: self, to: Date())
-        
         if let day = interval.day, day > 0 {
             return day == 1 ? "\(day) day" : "\(day) days"
         } else if let hour = interval.hour, hour > 0 {
-            return hour == 1 ? "\(hour) hour" : "\(hour) hours"
+            return hour == 1 ? "\(hour) hour" : self.timeString
         } else if let minute = interval.minute, minute > 0 {
             return minute == 1 ? "A minute ago" : "\(minute) minutes"
+        } else if let second = interval.second, second > 0 {
+            return second < 5 ? "A few seconds ago" : "\(second) seconds"
+        } else {
+            return "Just now"
         }
-        else if let second = interval.second, second > 0 {
-            return second == 1 ? "\(second) second" : "\(second) seconds"
-        }
-        else {
-            return "A few seconds ago"
-        }
-        
+    }
+    
+    var timeString: String {
+        let dateFormatter = DateFormatter()
+        dateFormatter.dateFormat = "hh:mm a"
+        return dateFormatter.string(from: self)
     }
 }
 
