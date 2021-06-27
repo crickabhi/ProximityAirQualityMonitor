@@ -8,12 +8,15 @@
 import UIKit
 
 class AirQualityStandardsVC: UIViewController {
+    // MARK: - Constants
+    private let VC_TITLE = "AQI Quality Standards"
     
     // MARK: - Variables
     @IBOutlet weak var tableView: UITableView!
     
     override func viewDidLoad() {
         super.viewDidLoad()
+        self.title = VC_TITLE
         tableView.tableFooterView = UIView()
     }
 
