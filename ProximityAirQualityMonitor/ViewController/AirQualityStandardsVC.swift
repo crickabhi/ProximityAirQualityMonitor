@@ -9,7 +9,7 @@ import UIKit
 
 class AirQualityStandardsVC: UIViewController {
     // MARK: - Constants
-    private let VC_TITLE = "AQI Quality Standards"
+    private let VC_TITLE = "Air Quality Standards"
     
     // MARK: - Variables
     @IBOutlet weak var tableView: UITableView!
